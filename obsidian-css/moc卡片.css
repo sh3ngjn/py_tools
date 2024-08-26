@@ -1,0 +1,19 @@
+/* !关闭显示标题栏：colse_show_title */
+.colse_show_title.markdown-preview-view .mod-header .inline-title {
+    display: none;
+    line-height: 0px;
+  }
+  .view-content .colse_show_title .inline-title {
+    display: none;
+  }
+  
+  /* !设定界面宽度全宽：full_width_page*/
+  .full_width_page.markdown-source-view.mod-cm6.is-readable-line-width,
+  .full_width_page.markdown-preview-view {
+    --file-line-width: 100% !important;
+  }
+  /* 设定字体大小 */
+  .full_width_page.markdown-preview-view {
+    font-size: 22px !important;
+    line-height: 150%;
+  }

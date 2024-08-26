@@ -1,0 +1,80 @@
+:root {
+        --box-width: 250px;
+        --font-size: 15px;
+        /* 标题前序号颜色 */
+        --h1-list-graphic: #BF616A;
+        --h2-list-graphic: #EBCB8B;
+        --h3-list-graphic: #A3BE8C;
+        --h4-list-graphic: #B48EAD;
+        --h5-list-graphic: #8FBCBB;
+        --h6-list-graphic: #81A1C1;
+        /* 标题前序号颜色 */
+        --h-font-color: #141414;
+        --background-color: #3B4252;
+        --border-color: #434C5E;
+        --bg-opacity: 0.8;
+    }
+    /* 整体 */
+    ul.floating-toc {
+        right: 0 !important;
+        height: 100%;
+    }
+    /* 工具栏位置 */
+    .floating-toc-div .toolbar {
+        background-color: transparent;
+        top: 70px !important;
+        right: 10px !important;
+        margin-left: 0 !important;
+    }
+    /* 工具栏按钮 */
+    .toolbar>button {
+        background-color: var(--background-color) !important;
+        width: 50px !important;
+        height: 30px !important;
+        border: 1px solid var(--border-color) !important;
+    }
+    /* 字体大小 */
+    ul.floating-toc li {
+        font-size: var(--font-size);
+    }
+    /* 背景外观设置 */
+    .floating-toc-div.pin .floating-toc,
+    .floating-toc:hover {
+        width: var(--box-width);
+        background-color: var(--background-color) !important;
+        border: 2px solid var(--border-color) !important;
+        border-right: 0 !important;
+        border-radius: 10px 0 0 10px !important;
+        padding: 10px !important;
+    }
+    ul.floating-toc li[data-level="1"] a {
+        color: var(--h1-list-graphic) !important;
+    }
+    ul.floating-toc li[data-level="2"] a {
+        color: var(--h2-list-graphic) !important;
+    }
+    ul.floating-toc li[data-level="3"] a {
+        content: "3";
+        color: var(--h3-list-graphic) !important;
+    }
+    ul.floating-toc li[data-level="4"] a {
+        content: "4";
+        color: var(--h4-list-graphic) !important;
+    }
+    ul.floating-toc li[data-level="5"] a {
+        content: "5";
+        color: var(--h5-list-graphic) !important;
+    }
+    ul.floating-toc li[data-level="6"] a {
+        content: "6";
+        color: var(--h1-list-graphic) !important;
+    }
+    /* 鼠标停留背景 */
+    ul.floating-toc li {
+        padding-right: 0 !important;
+    }
+    /* 列表背景颜色 */
+    ul.floating-toc li>div>a {
+        background-color: transparent !important;
+    }
+    
