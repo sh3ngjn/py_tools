@@ -1,9 +1,19 @@
+<style>
 @font-face {
   font-family: 'LXGW WenKai';
-  src: url('LXGWWenKai-Regular.ttf') format('truetype');
+  src: url('./fonts/LXGWWenKai-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
 }
 
-.markdown-here-wrapper {
+@font-face {
+  font-family: 'LXGW WenKai';
+  src: url('./fonts/LXGWWenKai-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+body, .markdown-self {
   font-family: 'LXGW WenKai', sans-serif;
   font-size: 16px;
   line-height: 1.8em;
@@ -12,7 +22,7 @@
 
 pre, code {
   font-size: 14px;
-  font-family: 'LXGW WenKai', Roboto, 'Courier New', Consolas, Inconsolata, Courier, monospace;
+  font-family: Roboto, 'Courier New', Consolas, Inconsolata, Courier, monospace;
   margin: auto 5px;
 }
 
@@ -36,7 +46,7 @@ pre code {
   display: block !important;
 }
 
-strong, b{
+strong, b {
   color: #BF360C;
 }
 
@@ -174,3 +184,4 @@ table tr th {
   border: 1px solid #009688;
   background-color: #009688;
 }
+</style>
